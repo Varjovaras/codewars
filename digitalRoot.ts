@@ -1,11 +1,16 @@
 export const digitalRoot = (n: number): number => {
   let digits: number = n.toString().length;
-  let root:number = 0;
-  for (let i = 0; i < digits; i++) {
-    let root +=;
-    
+  let root: number = n;
+  while (root >= 10) {
+    root = 0;
+    for (let i = 1; i <= digits; i++) {
+      root += n % 10;
+      console.log('root :D', root);
+      n = (n - (n % 10)) / 10;
+    }
+    n = root;
   }
-  console.log(digits);
-  return digits;
+  console.log(root);
+  return root;
 };
-digitalRoot(1);
+digitalRoot(456);
