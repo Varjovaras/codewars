@@ -5,7 +5,6 @@ export const digitalRoot = (n: number): number => {
     root = 0;
     for (let i = 1; i <= digits; i++) {
       root += n % 10;
-      console.log('root :D', root);
       n = (n - (n % 10)) / 10;
     }
     n = root;
