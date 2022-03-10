@@ -5,7 +5,6 @@ class Kata {
     static spinWords(words) {
         const wordCount = words.trim().split(/\s+/).length;
         for (let i = 0; i < wordCount; i++) {
-            //   const element = [i];
         }
     }
 }
