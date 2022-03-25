@@ -2,7 +2,7 @@ function narcissistic(value) {
   let baseLength = value.toString().length;
   let digits = splitToDigit(value.toString());
   let narcissistic = 0;
-  for (i = 0; i < digits.length; i++) {
+  for (let i = 0; i < digits.length; i++) {
     narcissistic += Math.pow(digits[i], baseLength);
   }
   return narcissistic === value;
